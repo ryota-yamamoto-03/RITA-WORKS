@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./assets/css/style.css">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+  <title>RITA PHONE</title>
+</head>
+<body>
+  <div class="screen">
+    <!-- Lock Screen -->
+    <div class="lock-screen">
+      <div class="date"></div>
+      <div class="time"></div>
+    </div>
+
+    <!-- Home Screen -->
+    <div class="home-screen" id="home-screen">
+        <div class="current-time"></div>
+        <div class="app">
+          <div class="app-icon" onclick="openAppPage('profile')"><i class="fa-regular fa-user"></i></div>
+          <div class="app-name">PROFILE</div>
+        </div>
+        <div class="app">
+            <div class="app-icon" onclick="openAppPage('works')"><i class="fa-solid fa-film"></i></div>
+            <div class="app-name">WORKS</div>
+          </div>
+        <div class="app">
+          <div class="app-icon" onclick="openAppPage('contact')"><i class="fa-regular fa-envelope"></i></div>
+          <div class="app-name">CONTACT</div>
+        </div>
+    </div>
+
+    <!-- App Page -->
+    <div class="app-page" id="profile-page">
+        <iframe src="./assets/html/profile.html"></iframe>
+    </div>
+    <div class="app-page" id="works-page">
+        <iframe src="https://ryota-yamamoto-03.github.io/Portfolio/"></iframe>
+    </div>
+    <div class="app-page" id="contact-page">
+        <iframe src="./assets/html/contact.html"></iframe>
+    </div>
+
+    <!-- Home Button -->
+    <div class="home-button" onclick="goToHome()"></div>
+  </div>
+
+  <script src="./assets/js/script.js"></script>
+</body>
+</html>
